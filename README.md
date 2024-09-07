@@ -16,8 +16,12 @@ This repository contains instructions to set up a Docker environment with ROS No
 
 If you haven't already, create a folder to hold your workspace. Open this folder in Visual Studio Code or any code editor of your choice.
 
-### Step 2: Create a Dockerfile
+### Step 2: Create a Docker image using dockerfile
 
-Inside the workspace, create a new file named `Dockerfile` and add the following content:
+Create a docker image using above Dockerfile
+
+Go inside dir using terminal where Dockerfile exists
+
+''' docker  build -t r1_image_from_file . '''
 
 
