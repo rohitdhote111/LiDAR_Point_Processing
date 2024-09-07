@@ -22,6 +22,7 @@ Create a docker image using above Dockerfile
 
 Go inside dir using terminal where Dockerfile exists
 
-''' docker  build -t r1_image_from_file . '''
+'''bash 
+docker  build -t r1_image_from_file .
 
 
