@@ -18,9 +18,8 @@ git clone https://github.com/rohitdhote111/TII_Assignment
 ```
 ### Step 2: Create a Docker image using dockerfile
 
-Create a docker image using above Dockerfile
-
-Go inside dir using terminal where Dockerfile exists
+- goto this repo folder 
+- Create a docker image using Dockerfile
 
 ```bash 
 docker  build -t r1_image_from_file .
