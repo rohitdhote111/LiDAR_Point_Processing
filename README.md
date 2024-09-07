@@ -41,12 +41,39 @@ chmod +x docker_run.bash
 ./docker_run.bash
 ```
 
-### step 4: Catkin Make
+### step 4: Copy required files
 
-Goto catkin workspace and copy the packages present inside src folder from base machine to container src folder using cp command
+copy the packages present inside src folder from base machine to container src folder using cp command
+Also copy lidar .bag file inside catkin_ws folder of the container
+(Run below command outside container)
+
+```
+docker cp /path_to_folder/TII_Assignment/src/ cp r13d_container:/root/catkin_ws/
+```
+
+### step 5: Perform catkin_make
+
+Goto catkin workspace and perform catkin_make 
 
 ```
 cd ~/catkin_ws
-cp r13d_container: /path_to_folder/TII_Assignment/src/ /root/catkin_ws/src/
 catkin_make
 ```
+
+### step 6: Run packages
+  Two packages are present inside the src folder
+ 1. pointcloud_filer
+ 2. ransac_fast
+we can run these packages using roslaunch command
+```
+roslaunch pointcloud_filer pointcloud_filter
+roslaunch ransac_fast ransac_fast
+```
+### Rviz configuration
+After Rviz windows is open select “Fixed Frame>mbuggy/base_link” from left side display panel
+
+Add required pointclouds from Add>By topic>”select point required PC”
+
+Increase point size. (0.03 is good)
+
+Change color of the point cloud if required. (color transform>Flat then select color)
