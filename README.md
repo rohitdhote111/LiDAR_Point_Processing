@@ -1,9 +1,12 @@
-# TII_Assignment
+# Description
 LiDAR point cloud processing for Noise removal and Ground point filtering
+
+This repo and readme file only includes the steps to run the ros packages and Rviz visualization NOT the details about trials and experiments conducted.
+Report PDF file is separately provided which includes all the detailed analysis.
 
 # Docker ROS Noetic Workspace Setup
 
-This repository contains instructions to set up a Docker environment with ROS Noetic and a Catkin workspace. The Dockerfile included in this repo installs necessary dependencies and creates a Catkin workspace for ROS development.
+This repository contains instructions on how to set up a Docker environment with ROS Noetic and a Catkin workspace. The Dockerfile included in this repo installs necessary dependencies and creates a Catkin workspace for ROS development.
 
 ## Prerequisites
 
@@ -23,5 +26,9 @@ git clone https://github.com/rohitdhote111/TII_Assignment
 
 ```bash 
 docker  build -t r1_image_from_file .
+```
+### step 3: Create a Docker container using above image using bash file provided
+```
+
 
 
