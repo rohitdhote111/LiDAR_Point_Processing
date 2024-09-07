@@ -13,8 +13,8 @@ This repository contains instructions to set up a Docker environment with ROS No
 ## Getting Started
 
 ### Step 1: Clone or Create a Workspace
-
-If you haven't already, create a folder to hold your workspace. Open this folder in Visual Studio Code or any code editor of your choice.
+```bash
+git clone https://github.com/rohitdhote111/TII_Assignment
 
 ### Step 2: Create a Docker image using dockerfile
 
