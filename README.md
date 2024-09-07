@@ -1,8 +1,8 @@
 # Description
 LiDAR point cloud processing for Noise removal and Ground point filtering
 
-This repo and readme file only includes the steps to run the ros packages and Rviz visualization NOT the details about trials and experiments conducted.
-Report PDF file is separately provided which includes all the detailed analysis.
+This readme file only includes the steps to run the ros packages and Rviz visualization NOT the details about trials and experiments conducted.
+[Report PDF file](Report_TII_Assignment) is separately provided which includes all the detailed analysis.
 
 # Docker ROS Noetic Workspace Setup
 
