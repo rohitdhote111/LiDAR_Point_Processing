@@ -43,8 +43,10 @@ chmod +x docker_run.bash
 
 ### step 4: Catkin Make
 
-Goto catkin workspace and copy 
+Goto catkin workspace and copy the packages present inside src folder from base machine to container src folder using cp command
 
 ```
 cd ~/catkin_ws
+cp r13d_container: /path_to_folder/TII_Assignment/src/ /root/catkin_ws/src/
+catkin_make
 ```
