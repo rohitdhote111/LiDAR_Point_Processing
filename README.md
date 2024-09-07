@@ -28,8 +28,23 @@ cd TII_Assignment
 ```bash 
 docker  build -t r1_image_from_file .
 ```
+This command will create image with "r1_image_from_file", we can check it inside list of images with command
+```
+docker images
+```
 ### step 3: Create a Docker container using above image using bash file provided
+
+First give write permission to bash file and then run it
+
+```
+chmod +x docker_run.bash
+./docker_run.bash
 ```
 
+### step 4: Catkin Make
 
+Goto catkin workspace and copy 
 
+```
+cd ~/catkin_ws
+```
