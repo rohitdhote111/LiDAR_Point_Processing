@@ -1,0 +1,14 @@
+<launch>
+    <!-- Play the bag file -->
+    <node name="play_bag" pkg="rosbag" type="play" args="--loop /root/catkin_ws/LiDARFilteringAssignment.bag" />
+
+    <!-- Point cloud filter node -->
+    <node name="pointcloud_filter" pkg="pointcloud_filter" type="pointcloud_filter_node" output="screen">
+        <!-- Subscribe to the point cloud topic from the bag file -->
+        <remap from="/input_point_cloud" to="/mbuggy/os1/points" />
+    </node>
+
+    <!-- RViz for visualization -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find pointcloud_filter)/rviz/pointcloud_filter.rviz" />
+</launch>
+

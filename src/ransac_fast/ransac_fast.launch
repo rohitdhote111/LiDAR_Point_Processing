@@ -1,0 +1,13 @@
+<launch>
+    <!-- Play the bag file -->
+    <node name="play_bag" pkg="rosbag" type="play" args="--loop /root/catkin_ws/LiDARFilteringAssignment.bag" />
+
+    <!-- Point cloud process node -->
+    <node name="ransac_fast" pkg="ransac_fast" type="ransac_fast_node" output="screen">
+        <!-- Subscribe to the point cloud topic from the bag file -->
+        <remap from="/input_point_cloud" to="/mbuggy/os1/points" />
+    </node>
+
+    <!-- RViz for visualization -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ransac_fast)/rviz/ransac_fast.rviz" />
+</launch>
