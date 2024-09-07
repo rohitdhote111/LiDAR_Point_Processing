@@ -66,8 +66,8 @@ catkin_make
  2. ransac_fast
 we can run these packages using roslaunch command
 ```
-roslaunch pointcloud_filer pointcloud_filter
-roslaunch ransac_fast ransac_fast
+roslaunch pointcloud_filer pointcloud_filter.launch
+roslaunch ransac_fast ransac_fast.launch
 ```
 ### Rviz configuration
 After Rviz windows is open select “Fixed Frame>mbuggy/base_link” from left side display panel
