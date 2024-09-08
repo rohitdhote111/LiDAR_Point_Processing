@@ -77,3 +77,11 @@ Add required pointclouds from Add>By topic>”select point required PC”
 Increase point size. (0.03 is good)
 
 Change color of the point cloud if required. (color transform>Flat then select color)
+
+
+### To access docker container using new terminal window
+Run below commands
+```
+docker exec -it r13d_container bash
+cd ~/catkin_ws
+source devel/setup.bash
