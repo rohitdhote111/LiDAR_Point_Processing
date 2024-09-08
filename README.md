@@ -48,7 +48,7 @@ Also copy lidar .bag file inside catkin_ws folder of the container
 (Run below command outside container)
 
 ```
-docker cp /path_to_folder/TII_Assignment/src/ cp r13d_container:/root/catkin_ws/
+docker cp /path_to_folder/TII_Assignment/src/ r13d_container:/root/catkin_ws/
 ```
 
 ### step 5: Perform catkin_make
